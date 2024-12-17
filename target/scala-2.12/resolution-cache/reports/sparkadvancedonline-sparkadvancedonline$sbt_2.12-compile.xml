@@ -7,7 +7,7 @@
 		revision="0.1.0-SNAPSHOT"
 		conf="compile"
 		confs="compile, runtime, test, provided, optional"
-		date="20241216195933"/>
+		date="20241217170418"/>
 	<dependencies>
 		<module organisation="com.eed3si9n" name="sbt-assembly">
 			<revision name="2.2.0" status="release" pubdate="20240314073131" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/sbt/sbt-assembly" extra-scalaVersion="2.12" extra-sbtVersion="1.0" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="81">

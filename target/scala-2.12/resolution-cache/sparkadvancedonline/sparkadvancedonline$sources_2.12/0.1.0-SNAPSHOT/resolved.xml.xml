@@ -4,7 +4,7 @@
 		module="sparkadvancedonline$sources_2.12"
 		revision="0.1.0-SNAPSHOT"
 		status="integration"
-		publication="20241216195935"
+		publication="20241217170422"
 	/>
 	<configurations>
 		<conf name="default" visibility="public" description=""/>

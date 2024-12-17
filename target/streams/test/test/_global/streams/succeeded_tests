@@ -1,0 +1,4 @@
+#Successful Tests
+#Tue Dec 17 19:56:52 MSK 2024
+org.apache.spark.sql.hybrid.RowConverterSpec=1734454612211
+org.apache.spark.sql.hybrid.JsonParserSpec=1734454567811

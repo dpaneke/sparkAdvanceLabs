@@ -4,7 +4,7 @@
 		module="sparkadvancedonline$sbt_2.12"
 		revision="0.1.0-SNAPSHOT"
 		status="integration"
-		publication="20241216195933"
+		publication="20241217170418"
 	/>
 	<configurations>
 		<conf name="compile" visibility="public" description=""/>
