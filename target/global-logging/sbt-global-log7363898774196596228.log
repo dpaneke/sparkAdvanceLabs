@@ -1,9 +1,0 @@
-[0m[[0m[0mdebug[0m] [0m[0m> Exec(assembly, None, None)[0m
-[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: assembly[0m
-[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
-[0m[[0m[0minfo[0m] [0m[0m1807 file(s) merged using strategy 'First' (Run the task at debug level to see the details)[0m
-[0m[[0m[0minfo[0m] [0m[0m975 file(s) merged using strategy 'Discard' (Run the task at debug level to see the details)[0m
-[0m[[0m[0minfo[0m] [0m[0mBuilt: /Users/davidpaneque/IdeaProjects/SparkAdvancedOnline/target/scala-2.12/SparkAdvancedOnline-assembly-0.1.0-SNAPSHOT.jar[0m
-[0m[[0m[0minfo[0m] [0m[0mJar hash: fef2ecdac967d738c707b5bb3949278386adbad2[0m
-[0m[[0m[32msuccess[0m] [0m[0mTotal time: 22 s, completed 17.12.2024 20:19:28[0m
-[0m[[0m[0mdebug[0m] [0m[0m> Exec(idea-shell, None, None)[0m

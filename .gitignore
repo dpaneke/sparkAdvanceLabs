@@ -1,4 +1,7 @@
 .idea/
 .bsp/
+target/
+project/project/
+project/target/
 .DS_Store
 *.jar

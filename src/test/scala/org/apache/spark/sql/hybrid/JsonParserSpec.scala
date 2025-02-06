@@ -6,6 +6,7 @@ import org.apache.spark.sql.catalyst.InternalRow
 import org.apache.spark.sql.types.{IntegerType, StringType, StructField, StructType}
 import org.scalatest.flatspec.AnyFlatSpec
 import org.scalatest.matchers.should
+
 class JsonParserSpec extends AnyFlatSpec with should.Matchers {
   val spark: SparkSession =
     SparkSession
@@ -26,7 +27,7 @@ class JsonParserSpec extends AnyFlatSpec with should.Matchers {
     val row: Iterator[InternalRow] = jsonParser.toRow(Iterator(rawString))
     val rowsRdd: RDD[InternalRow] = spark.sparkContext.parallelize(row.toList)
     val df: DataFrame = spark.internalCreateDataFrame(rowsRdd, schema, IsStreaming)
-    df.show
-    df.printSchema
+    df.show()
+    df.printSchema()
   }
 }
