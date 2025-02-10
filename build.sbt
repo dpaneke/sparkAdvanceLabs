@@ -7,7 +7,8 @@ val sparkVersion = "3.4.3"
 libraryDependencies ++= Seq(
   "org.apache.spark" %% "spark-core" % sparkVersion,
   "org.apache.spark" %% "spark-sql" % sparkVersion,
-  "org.scalatest" %% "scalatest" % "3.2.11"
+  "org.scalatest" %% "scalatest" % "3.2.11",
+  "org.mongodb.scala" %% "mongo-scala-driver" % "2.9.0"
 )
 
 lazy val root = (project in file("."))
