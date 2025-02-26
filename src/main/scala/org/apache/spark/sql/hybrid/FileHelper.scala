@@ -13,7 +13,7 @@ object FileHelper {
     buffWriter.close()
   }
 
-  def ensureParentDirectory(path: String): Unit = {
+  private def ensureParentDirectory(path: String): Unit = {
     this.synchronized {
       val dir: File = new File(path)
       val parentDir: File = dir.getParentFile

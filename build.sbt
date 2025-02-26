@@ -1,4 +1,4 @@
-ThisBuild / version := "0.1.0-SNAPSHOT"
+ThisBuild / version := "0.2.5-SNAPSHOT"
 
 ThisBuild / scalaVersion := "2.12.18"
 
@@ -17,6 +17,8 @@ lazy val root = (project in file("."))
   )
 
 assemblyMergeStrategy in assembly := {
+  case PathList("META-INF", "services", "org.apache.spark.sql.sources.DataSourceRegister") =>
+    MergeStrategy.concat
   case PathList("META-INF", xs @ _*) => MergeStrategy.discard
   case x => MergeStrategy.first
 }
