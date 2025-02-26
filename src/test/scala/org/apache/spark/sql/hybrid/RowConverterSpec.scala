@@ -16,7 +16,7 @@ class RowConverterSpec extends AnyFlatSpec with should.Matchers {
   val spark: SparkSession =
     SparkSession
       .builder()
-      .master("local[*]")
+      .master("local[1]")
       .appName("test")
       .getOrCreate()
 
@@ -29,7 +29,7 @@ class RowConverterSpec extends AnyFlatSpec with should.Matchers {
   }
 
   "Converter" should "convert Df" in {
-    val df = spark.createDataFrame(spark.sparkContext.parallelize(Seq(
+    val df: DataFrame = spark.createDataFrame(spark.sparkContext.parallelize(Seq(
       Row(1, "Alice", "x"),
       Row(10, "Bob", "y"),
       Row(100, "John", "y")
@@ -44,4 +44,5 @@ class RowConverterSpec extends AnyFlatSpec with should.Matchers {
     println(out.toList)
     out.toList.foreach(println)
   }
+
 }
